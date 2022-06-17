@@ -1,13 +1,199 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+
+* {
+    font-family: 'Merriweather', serif;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #efefef;
+    overflow-x: hidden;
+}
+
+.bgimage {
+    width: 100%;
+    height: 400px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid #ddddff;
+    border-right: none;
+    border-left: none;
+}
+
+.bgimage h1 {
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 10px;
+    font-size: 3rem;
+    background-color: rgba(204, 204, 204, 0.5);
+    display: inline-block;
+    border-radius: 30px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    /* margin: 2rem; */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    width: 100%;
+}
+
+.search form {
+    display: flex;
+    width: 50%;
+}
+
+.search form input[type="text"] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-right: none;
+    float: left;
+    width: 100%;
+    background: #bbb;
+    border-radius: 10px 0 0 10px;
+}
+
+.search form button[type="submit"] {
+    float: right;
+    width: 10%;
+    padding: 10px;
+    background: #bbb;
+    color: #555599;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+    /* Prevent double borders */
+    cursor: pointer;
+}
+
+.search button[type="submit"]:hover {
+    color: #8888aa;
+}
+
+.options {
+    display: flex;
+    width: 85%;
+    margin: 1rem;
+    padding: 10px;
+    height: 300px;
+    border: 2px solid #a9a9a9;
+    border-radius: 10px;
+}
+
+.options h2 {
+    font-size: 48px;
+    /* backdrop-filter: blur(1px); */
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+    visibility: hidden;
+}
+
+.options:hover h2 {
+    visibility: visible;
+    /* backdrop-filter: blur(2px); */
+}
+
+.options:hover {
+    filter: blur(2px);
+}
+
+.options a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.imageResults {
+    display: inline;
+    width: 25%;
+    height: 25%;
+    margin: 1rem;
+    padding: 5px;
+    border: 2px solid #aaaaaa;
+    float: left;
+    object-fit: cover;
+    border-radius: 10px;
+    transition-timing-function: ease-in-out;
+    transition: 0.2s;
+}
+
+.imageResults:hover {
+    border: 2px solid #555;
+}
+
+.topButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backToTop {
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+
+}
+
+.backToTop:hover {
+    background-color: #eaeaea;
+    border: 2px solid black;
+}
+
+@media(max-width: 650px) {
+    .search form button[type="submit"] {
+        /* display: none; */
+        width: 15%;
+    }
+
+
+    .search form input[type="text"] {
+        /* border-right: 1px solid grey;
+        border-radius: 10px; */
+        width: 70%;
+    }
+
+    .options {
+        display: block;
+        width: 70%;
+        height: 150px;
+    }
+
+    .options h2 {
+        font-size: 22px;
+        backdrop-filter: blur(2px);
+        text-align: center;
+        justify-content: center;
+        padding: 5px;
+        visibility: visible;
+    }
+
+    .bgimage {
+        height: 400px;
+    }
+
+    .imageResults {
+        width: 90%;
+        display: flex;
+    }
+
+
+
 }
