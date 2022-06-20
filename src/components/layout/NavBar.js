@@ -8,9 +8,9 @@ function NavBar() {
             <nav className={classes.nav}>
                 <ul className={classes.list}>
                     <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/favorites'>Favorites</Link></li>
-                    <li><Link to='/about'>About</Link></li>
                     <li><Link to='/search'>Search</Link></li>
+                    <li><Link to='/about'>About</Link></li>
+
 
                 </ul>
 
