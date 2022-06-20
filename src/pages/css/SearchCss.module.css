@@ -1,3 +1,9 @@
+.search {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 .sugg {
     display: grid;
     grid-template-columns: 3fr 3fr 3fr 3fr 3fr 3fr;
@@ -89,8 +95,4 @@ hr {
         width: 90%;
         display: flex;
     }
-
-    /* .info p {
-        display: block;
-    } */
 }

@@ -44,10 +44,12 @@
     color: #999999;
 }
 
-.title {
+.title a {
+    text-decoration: none;
     font-size: 3rem;
     font-weight: bold;
     font-family: "Sofia", sans-serif;
+    color: black;
 }
 
 @media(max-width: 880px) {

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function NavBar() {
     return (
         <header className={classes.header}>
-            <div className={classes.title}>Picture Palooza</div>
+            <div className={classes.title}><Link to="/">Picture Palooza</Link></div>
             <nav className={classes.nav}>
                 <ul className={classes.list}>
                     <li><Link to='/'>Home</Link></li>
