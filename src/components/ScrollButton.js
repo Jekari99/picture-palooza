@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 
 function ScrollButton() {
-    const [visible, setVisible] = useState(false)
+    // const [visible, setVisible] = useState(false)
 
-    const toggleVisible = () => {
-        const scrolled = document.documentElement.scrollTop;
-        if (scrolled > 300) {
-            setVisible(true)
-        }
-        else if (scrolled <= 300) {
-            setVisible(false)
-        }
-    };
+    // const toggleVisible = () => {
+    //     const scrolled = document.documentElement.scrollTop;
+    //     if (scrolled > 300) {
+    //         setVisible(true)
+    //     }
+    //     else if (scrolled <= 300) {
+    //         setVisible(false)
+    //     }
+    // };
 
     const scrollToTop = () => {
         window.scrollTo({
