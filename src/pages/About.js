@@ -20,7 +20,6 @@ function About() {
             </div>
             <br />
             <br />
-
             <div className={classes.moreInfo}>
                 <img src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_detail/aventador/Ultimae/aven_ultimae_og.jpg" alt="Lamborghini" />
                 <h3>Easy to download, just simply double click the image</h3>
