@@ -16,7 +16,7 @@ function Search(props) {
         const root = ReactDOM.createRoot(document.getElementById("result"));
 
         let results = [];
-        let clientId = "EksPomgD6zha27aLg8by5Xqx3SmJ-Jbba0bMflRU6FQ";
+        let clientId = process.env.REACT_APP_UNSPLASH_API;
         let url = `https://api.unsplash.com/search/photos/?client_id=${clientId}&query=${search}&per_page=1000`;
         fetch(url)
             .then(res => res.json())
