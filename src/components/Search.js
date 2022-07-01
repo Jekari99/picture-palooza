@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { useState } from 'react';
 import FileSaver from 'file-saver';
+import env from "react-dotenv";
 
 
 function Search(props) {
@@ -16,7 +17,7 @@ function Search(props) {
         const root = ReactDOM.createRoot(document.getElementById("result"));
 
         let results = [];
-        let clientId = process.env.REACT_APP_UNSPLASH_API;
+        let clientId = env.REACT_APP_UNSPLASH_API;
         let url = `https://api.unsplash.com/search/photos/?client_id=${clientId}&query=${search}&per_page=1000`;
         fetch(url)
             .then(res => res.json())
