@@ -23,6 +23,22 @@ function Home(props) {
                 <Suggestions text="Flowers" bg='https://cdn.britannica.com/84/73184-004-E5A450B5/Sunflower-field-Fargo-North-Dakota.jpg' />
 
             </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <div className={classes.blockInfo}>
+                <p>Millions of Pictures</p>
+                <hr />
+                <p>The #1 source for all your pictures</p>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
 
         </div >
     );

@@ -56,6 +56,24 @@ hr {
     color: black;
 }
 
+.blockInfo {
+    background: rgb(126, 126, 126);
+    background: linear-gradient(90deg, rgba(126, 126, 126, 1) 20%, rgba(221, 221, 255, 1) 50%, rgba(120, 120, 120, 1) 80%);
+    height: 250px;
+}
+
+.blockInfo p {
+    text-align: center;
+    transform: translate(0%, 150%);
+    font-size: 28px;
+}
+
+.blockInfo hr {
+    transform: translate(0%, 200%);
+    border-color: #6e6e6e;
+
+}
+
 @media(max-width: 650) {
     .suggestions {
         display: grid;

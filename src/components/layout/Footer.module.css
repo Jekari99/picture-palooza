@@ -25,3 +25,11 @@
 
 
 }
+
+.foot a {
+    text-decoration: none;
+}
+
+.foot a:hover {
+    color: black;
+}

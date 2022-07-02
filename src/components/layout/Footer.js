@@ -10,10 +10,10 @@ function Footer() {
                 <p>Made By Jekari Rawls / Pictures from Unsplash API</p>
 
                 {/* <img src="linkedin.png" alt="LinkedIn logo" /> */}
-                <p>LinkedIn: Jekari Rawls</p>
+                <p><a href="https://www.linkedin.com/in/jekari-rawls-a984961a9/" rel="noopener noreferrer" target="_blank">LinkedIn Profile</a></p>
 
                 {/* <img src="github.png" alt="GitHub logo" /> */}
-                <p>GitHub: jekari99</p>
+                <p><a href="https://github.com/Jekari99" rel="noopener noreferrer" target="_blank">GitHub Profile</a></p>
 
 
             </div>
