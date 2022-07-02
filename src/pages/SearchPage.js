@@ -33,12 +33,12 @@ function Page() {
             <PageTitle text="Search" bg="https://cdn.wallpapersafari.com/31/7/oglPTv.jpg" />
             <Search />
             <div className={classes.sugg}>
-                <button type="submit" onClick={handleSubmit} value={search} onMouseOver={(e) => setSearch("Dogs")}>Dogs</button>
-                <button type="submit" onClick={handleSubmit} value={search} onMouseOver={(e) => setSearch("Cars")}>Cars</button>
+                <button type="submit" onClick={handleSubmit} value={search} onMouseOver={(e) => setSearch("Dog")}>Dogs</button>
+                <button type="submit" onClick={handleSubmit} value={search} onMouseOver={(e) => setSearch("Car")}>Cars</button>
                 <button type="submit" onClick={handleSubmit} value={search} onMouseOver={(e) => setSearch("London")}>London</button>
                 <button type="submit" onClick={handleSubmit} value={search} onMouseOver={(e) => setSearch("New York")}>New York</button>
-                <button type="submit" onClick={handleSubmit} value={search} onMouseOver={(e) => setSearch("Houses")}>Houses</button>
-                <button type="submit" onClick={handleSubmit} value={search} onMouseOver={(e) => setSearch("Flowers")}>Flowers</button>
+                <button type="submit" onClick={handleSubmit} value={search} onMouseOver={(e) => setSearch("House")}>Houses</button>
+                <button type="submit" onClick={handleSubmit} value={search} onMouseOver={(e) => setSearch("Flower")}>Flowers</button>
             </div>
             <hr />
             <div className={classes.info}>
