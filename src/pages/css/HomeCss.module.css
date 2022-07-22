@@ -27,6 +27,8 @@ hr {
 
 .homeInfo p {
     font-size: 2em;
+    text-align: center;
+    font-size: clamp(1em, 2vw, 3em);
     /* margin: 5px;
     padding: 10px; */
 }
@@ -44,6 +46,8 @@ hr {
     padding: 5px;
     border: 1px solid black;
     width: 20%;
+    text-decoration: none;
+    color: black;
 }
 
 .searchButton:hover {
@@ -51,10 +55,7 @@ hr {
     border: 2px solid black;
 }
 
-.searchButton a {
-    text-decoration: none;
-    color: black;
-}
+
 
 .blockInfo {
     background: rgb(126, 126, 126);
@@ -74,13 +75,32 @@ hr {
 
 }
 
+
+
 @media(max-width: 650) {
     .suggestions {
         display: grid;
         grid-template-columns: 3fr 3fr;
     }
 
-    .homeInfo p {
-        visibility: hidden;
+    .blockInfo p {
+        transform: translate(0%, 50%);
+
     }
+}
+
+@media (max-width: 460px) {
+    .blockInfo p {
+        transform: translate(0%, 25%);
+    }
+
+
+}
+
+@media (max-width: 475px) {
+
+    .searchButton {
+        width: 30%;
+    }
+
 }

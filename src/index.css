@@ -2,7 +2,7 @@
 
 * {
     font-family: 'Merriweather', serif;
-
+    box-sizing: border-box;
 }
 
 body {
@@ -11,6 +11,7 @@ body {
     width: 100%;
     background-color: #efefef;
     overflow-x: hidden;
+
 }
 
 .bgimage {

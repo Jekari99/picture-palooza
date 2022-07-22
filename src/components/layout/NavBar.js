@@ -2,9 +2,17 @@ import classes from "./NavBar.module.css";
 import { Link } from 'react-router-dom';
 
 function NavBar() {
+
+
     return (
         <header className={classes.header}>
-            <div className={classes.title}><Link to="/">Picture Palooza</Link></div>
+            <div className={classes.title}>
+                <Link to="/">Picture Palooza</Link>
+                <span className={classes.hamIcon}>
+                    <button><i className="fa fa-bars"></i></button>
+                </span>
+            </div>
+
             <nav className={classes.nav}>
                 <ul className={classes.list}>
                     <li><Link to='/'>Home</Link></li>
@@ -15,6 +23,8 @@ function NavBar() {
                 </ul>
 
             </nav>
+
+
 
 
         </header>

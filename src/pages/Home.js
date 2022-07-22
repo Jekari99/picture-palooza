@@ -12,7 +12,7 @@ function Home(props) {
                 <p>We have the means to supply all your picture needs</p>
             </div>
             <div className={classes.searchButtonArea}>
-                <button className={classes.searchButton} ><Link to="/search">Go to Search</Link></button>
+                <Link to="/search" className={classes.searchButton}>Go to Search</Link>
             </div>
             <div className={classes.suggestions}>
                 <Suggestions text="Dogs" bg='https://www.pitbullinfo.org/uploads/7/8/9/7/7897520/pitbull-dog-1_3.jpg' />
@@ -39,6 +39,7 @@ function Home(props) {
             <br />
             <br />
             <br />
+
 
         </div >
     );

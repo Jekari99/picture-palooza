@@ -50,16 +50,55 @@
     font-weight: bold;
     font-family: "Sofia", sans-serif;
     color: black;
+    margin: 0.5rem;
 }
+
+.hamIcon {
+    float: right;
+}
+
+.hamIcon i {
+    display: none;
+    font-size: 24px;
+    margin: 1rem;
+}
+
+.hamIcon button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
 
 @media(max-width: 880px) {
-    .title {
-        font-size: 1rem;
+    .header {
+        display: block;
     }
-}
 
-@media(max-width: 650px) {
-    .title {
-        display: none;
+    .title a {
+        font-size: 2rem;
     }
+
+    .nav {
+        display: block;
+        width: 100%;
+        top: 0;
+    }
+
+    .list {
+        display: block;
+    }
+
+    .list li {
+        display: block;
+        background-color: blue;
+        width: 100%;
+        right: -5000px;
+    }
+
+    .hamIcon i {
+        display: flex;
+    }
+
 }
