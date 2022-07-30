@@ -95,4 +95,8 @@ hr {
         width: 90%;
         display: flex;
     }
+
+    .info p {
+        width: 50%;
+    }
 }

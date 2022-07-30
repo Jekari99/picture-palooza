@@ -1,29 +1,15 @@
 .foot {
-    /* width: 100%;
-    background-color: #ddddff;
-    font-size: 14px;
-    height: 5rem;
-    bottom: 0;
-    margin-top: 5rem; */
-
     width: 100%;
-    /* self explanatory */
-    /*The element is positioned relative to its first positioned (not static) ancestor element*/
-    /*property affects the vertical position of a positioned element*/
     background-color: #ddddff;
     font-size: 14px;
 
-    height: 8rem;
-    /* padding-top: 2em;
-    padding-bottom: 2em; */
+    height: 10rem;
     padding: 10px;
     margin-top: 3rem;
     bottom: 0;
     display: flex;
     text-align: center;
     justify-content: center;
-
-
 }
 
 .foot a {

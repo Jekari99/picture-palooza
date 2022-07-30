@@ -71,6 +71,7 @@
 
 
 
+
 @media(max-width: 880px) {
     .header {
         display: block;
@@ -81,21 +82,34 @@
     }
 
     .nav {
-        display: block;
+        display: none;
         width: 100%;
         top: 0;
+        transition: 0.5s ease-in-out;
     }
+
+    .expand {
+        display: block;
+    }
+
+    .nav .expand .list li {
+        display: none;
+    }
+
+
 
     .list {
         display: block;
     }
 
+
     .list li {
         display: block;
-        background-color: blue;
+        background-color: #ddddff;
         width: 100%;
-        right: -5000px;
+        /* right: -5000px; */
     }
+
 
     .hamIcon i {
         display: flex;
